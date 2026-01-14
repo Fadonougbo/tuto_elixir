@@ -1,6 +1,8 @@
 
 map=%{name: "doe",age: 12}
 
+
+
 # map=%{"name"=>"doe",:age=>12}
 
 # map=%{name: "doe",age: 12} // avec cette syntax on recupere les elements sous form d'atom
@@ -21,5 +23,5 @@ map2=%{"name"=>"doe",:age=>12}
 # Map.delete(map2,:ok)
 # Map.replace(map2,:age,300)
 # Map.merge(map,map2)
-IO.inspect(%{map | name: "john"})
+IO.inspect(Map.delete(map,:name))
 
